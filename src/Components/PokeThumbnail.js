@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import Details from './Details';
+
 
 const PokeThumbnail = ({id,name,image,type,height,weight,stat1,stat2,stat3,stat4,stat5,stat6,bs1,bs2,bs3,
     bs4,bs5,bs6}) => {
@@ -15,7 +16,7 @@ const PokeThumbnail = ({id,name,image,type,height,weight,stat1,stat2,stat3,stat4
                 <h3>{name.toUpperCase() }</h3>
                 <small>Type : {type}</small>
                 <button className="pokeinfo" onClick={()=>setShow(!show)}>{show===true?"Know less...":"Know more..."}</button>
-                {show===true?<Description weightpok={weight} heightpok={height} pokstat1={stat1}
+                {show===true?<Details weightpok={weight} heightpok={height} pokstat1={stat1}
                 pokstat2={stat2}
                 pokstat3={stat3}
                 pokstat4={stat4}
@@ -36,4 +37,4 @@ const PokeThumbnail = ({id,name,image,type,height,weight,stat1,stat2,stat3,stat4
     )
 }
 
-export default PokemonThumbnail;
+export default PokeThumbnail;
