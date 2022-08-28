@@ -57,8 +57,16 @@ function App() {
             )}
        </div>
        <button className="load-more" onClick={()=>getAllPokemons()}>More Pokemons</button>
-     </div>
+       <div className="footer">
+      <a href="https://github.com/nadin3amanda">
+        <p>
+        github.com/nadin3amanda </p>
+      </a>
     </div>
+     </div>
+     
+    </div>
+    
   );
 }
 

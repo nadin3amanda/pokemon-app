@@ -15,7 +15,7 @@ const PokeThumbnail = ({id,name,image,type,height,weight,stat1,stat2,stat3,stat4
             <div className="detail-wrapper">
                 <h3>{name.toUpperCase() }</h3>
                 <small>Type : {type}</small>
-                <button className="pokeinfo" onClick={()=>setShow(!show)}>{show===true?"Know less...":"Know more..."}</button>
+                <button className="pokeinfo" onClick={()=>setShow(!show)}>{show===true?"Less Info...":"More Info..."}</button>
                 {show===true?<Details weightpok={weight} heightpok={height} pokstat1={stat1}
                 pokstat2={stat2}
                 pokstat3={stat3}
